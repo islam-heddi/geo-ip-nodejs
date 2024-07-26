@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const { lookup } = require('geoip-lite')
+const { lookup } = require('geoip-country')
 
 const PORT = process.env.PORT || 5000
 
