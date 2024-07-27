@@ -16,7 +16,7 @@ app.get('/', (req,res) => {
 app.get('/country', (req,res) => {
     const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress
     console.log(ip)
-    res.send(lookup(ip))
+    res.send('Adress ip : ' + ip + '<br>the lookup :  ' + JSON.stringify(lookup(ip)))
 })
 
 app.listen(PORT, () => {
